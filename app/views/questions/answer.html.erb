@@ -1,0 +1,16 @@
+<div class="m-4">
+
+<h1> Stupid Coaching </h1>
+
+<div class="question p-2 my-3 bg-light">
+<p><%=params[:question]%></p>
+<p class="person">- Toi</p>
+</div>
+
+<div class="question p-2 mb-3 bg-warning" style="--bs-bg-opacity: .2;">
+<p><strong><%= @answer %></strong></p>
+<p class="person">- Ton coach</p>
+</div>
+
+<p class="link"><%=link_to "Ask a new question", ask_path%></p>
+</div>
